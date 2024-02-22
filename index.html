@@ -11,7 +11,7 @@
     <header>
         <div class="navbar">
 
-            <!--                         FOR MENU-BTN                           -->
+            
             <div class="menu-button">
                 <button id="openMenu"><i class="fa-solid fa-bars" style="color: #000000;"></i></button>
             </div>
@@ -55,30 +55,27 @@
 
             <script>
                 function searchContent() {
-                  // Get input value and convert it to lowercase for case-insensitive search
                   var input = document.getElementById('search-input').value.toLowerCase();
-                  // Get all elements with the specified class (where you have stored your content)
                   var elements = document.getElementsByClassName('box-content');
                 
-                  // Initialize an empty array to store matching results
                   var results = [];
-                
-                  // Loop through each element to check for a match
+
+
                   for (var i = 0; i < elements.length; i++) {
-                    var content = elements[i].textContent.toLowerCase(); // Get the text content of the element
-                    // Check if the input value is found in the content
+                    var content = elements[i].textContent.toLowerCase();
+
                     if (content.includes(input)) {
-                      results.push(elements[i].outerHTML); // Add the matching content to the results array
+                      results.push(elements[i].outerHTML); 
                     }
                   }
                 
-                  // Display the results
+                  
                   var searchResultsDiv = document.getElementById('searchResults');
-                  searchResultsDiv.innerHTML = ''; // Clear previous results
+                  searchResultsDiv.innerHTML = ''; 
                   if (results.length > 0) {
-                    searchResultsDiv.innerHTML = results.join(''); // Join and display the matching content
+                    searchResultsDiv.innerHTML = results.join(''); 
                   } else {
-                    searchResultsDiv.innerHTML = '<p>No results found.</p>'; // Display a message if no results are found
+                    searchResultsDiv.innerHTML = '<p>No results found.</p>'; 
                   }
                 }
                 </script>

@@ -12,7 +12,7 @@ html {
 }
 
 .navbar{
-    z-index:20 ;   /*By setting a higher z-index for your navbar, it should be displayed above the checkboxes or any other content when you scroll down.*/
+    z-index:20 ;   
     font-size: 0.4rem;
     width: 100%;
     display: flex;
@@ -68,13 +68,13 @@ html {
     border: 0.1rem solid #ccc;
     list-style: none;
     padding: 1rem;
-    white-space: nowrap;  /* this is use for display a paragraph in a single line*/
+    white-space: nowrap;  
   }
   
   .options li {
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 0.7rem 5rem; /* Adjusted padding to make items appear in a single line */
+    padding: 0.7rem 5rem; 
     color: #333;
   }
   
@@ -192,7 +192,7 @@ html {
     background-color: rgba(128, 128, 128, 0.146);
 }
 
- /* Sidebar styles */
+ 
  .sidebar {
     width: 27rem;
     background-color:transparent;
@@ -217,7 +217,7 @@ html {
 
 
 
-/* Checkbox styles */
+
 .checkbox-label {
     display: block;
     align-items: center;
@@ -228,7 +228,7 @@ html {
 }
 
 
-/* Styling the checkbox itself */
+
 .checkbox-label input[type="checkbox"] {
     margin-right: 1rem;
      /* Increase the size of the checkbox */
@@ -318,7 +318,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set a fixed height to center vertically in the viewport */
+    height: 100vh; 
     text-align: center;
 }
 
@@ -333,7 +333,7 @@ html {
 
 
 
-/*                         FOR SIDEBAR                      */
+
 
 @media screen and (min-width: 769px) and (max-width: 1321px){
     .sidebar{
@@ -355,7 +355,7 @@ html {
 }
 
 
-/* Add the following CSS rules */
+
 
 
 .filter-button {
@@ -419,7 +419,7 @@ html {
 
 
 
-/*                         FOR MENU-BAR                        */
+
 
 @media screen and (min-width: 769px){
     .menu-button {
@@ -512,7 +512,7 @@ html {
 }
 
 
-/*                         FOR COURSE-SECTION                        */
+
 
 @media (max-width: 768px) {
     
@@ -535,7 +535,7 @@ html {
 
 
 
-/*                                          FOR FOOTER                                   */
+
 
 .foot-panel{
     padding-top: 7rem;
@@ -592,7 +592,7 @@ ul a{
 }
 
 .logo-last a:not(:last-child) {
-    margin-right: 1.5rem; /* Adjust the margin as needed */
+    margin-right: 1.5rem; 
 }
 
 @media (max-width: 768px){
@@ -628,6 +628,6 @@ ul a{
     }
 }
 
-/*                      FOR MENU-BTN                             */
+
 
 

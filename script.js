@@ -14,13 +14,12 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
                 });
 
                 if (checkedCategories.length === 0) {
-                    // If no checkboxes are selected, display all cards
                     cards.forEach(card => {
                         card.style.display = 'block';
                     });
-                    noMatchingCardsMessage.style.display = 'none'; // Hide the message
+                    noMatchingCardsMessage.style.display = 'none'; 
                 } else {
-                    let anyCardVisible = false; // Flag to track if any card is visible
+                    let anyCardVisible = false; 
 
                     cards.forEach(card => {
                         const categories = card.dataset.category.split(' ');
@@ -28,15 +27,15 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
                         card.style.display = showCard ? 'block' : 'none';
 
                         if (showCard) {
-                            anyCardVisible = true; // At least one card is visible
+                            anyCardVisible = true; 
                         }
                     });
 
-                    // Update the message visibility
+                    
                     if (anyCardVisible) {
-                        noMatchingCardsMessage.style.display = 'none'; // Hide the message
+                        noMatchingCardsMessage.style.display = 'none'; 
                     } else {
-                        noMatchingCardsMessage.style.display = 'block'; // Show the message
+                        noMatchingCardsMessage.style.display = 'block'; 
                     }
                 }    
             });
@@ -44,7 +43,7 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 
 
 
-// FOR FILTER BUTTON
+
 
 
 var filterButton = document.getElementById('filterButton');
@@ -66,7 +65,7 @@ closeButton.addEventListener('click', function () {
 
 
 
-// FOR MENU-BTN
+
 
 document.getElementById("openMenu").addEventListener("click", function () {
     document.getElementById("mobileMenu").style.display = "block";
